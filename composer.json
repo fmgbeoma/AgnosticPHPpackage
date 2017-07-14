@@ -1,0 +1,27 @@
+{
+    "name": "agnostic-package",
+    "description": "Using PHPUnit test to implement CRUD",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fucho",
+            "email": "fmgbeoma@yahoo.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "AgnosticPackage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AgnosticPackage\\Test\\": "test/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
